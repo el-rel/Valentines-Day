@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Envelope + Letter (Open/Close on Click)</title>
+    <link rel="stylesheet" href="letter.css">
+</head>
+<body>
+  <div class="buo">  
+  <div class="container">
+        <div class="envelope-wrapper">
+            <div class="envelope">
+                <div class="letter">
+                    <div class="text">
+                        <strong>Dear James,</strong>
+                        <p>
+                            Hiii love &lt33, I am really sorry for being selfish and for always blaming you kapag nag-aaway tayo. Nagkulang ako and I am really sorry. Kung kailan araw ng mga puso tsaka pa ako nanghingi ng space jusq. 
+                            
+                            <br>
+                            <a href="james.html">Love, Sorry uli.</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="heart"></div>
+        </div>
+    </div>
+    <div class="greetings">
+      <a href="james.html">Click me</a>
+    </div>
+  </div>
+    <script>
+        const envelope = document.querySelector('.envelope-wrapper');
+        envelope.addEventListener('click', () => {
+            envelope.classList.toggle('flap');
+        });
+    </script>
+</body>
+</html>
